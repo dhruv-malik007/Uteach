@@ -49,7 +49,7 @@ export default function Section4(){
         </div>
         </div>
         <div className="text-center my-10 lg:my-0">
-        <div className="flex justify-center"><Image className="" src="/assets/icon (1).svg" alt="" width={64} height={64}/></div>
+        <div className="flex justify-center"><Image className="" src="/assets/icon(1).svg" alt="" width={64} height={64}/></div>
         <div className="text-yellow-500 my-2 font-extrabold text-6xl">
             1M 
         </div>
@@ -58,7 +58,7 @@ export default function Section4(){
         </div>
         </div>
         <div className="text-center my-10 lg:my-0">
-        <div className="flex justify-center"><Image className="" src="/assets/icon (2).svg" alt="" width={64} height={64}/></div>
+        <div className="flex justify-center"><Image className="" src="/assets/icon(2).svg" alt="" width={64} height={64}/></div>
         <div className="text-yellow-500 my-2 font-extrabold text-6xl">
             17M
         </div>
