@@ -8,19 +8,14 @@ const roboto = Roboto({
 
 export default function Section2(){
     return (
-        <div className="px-0 lg:section2 p-20" style={{background:"#F1F5F9"}}>
+        <div className="px-0 lg:section2 lg:p-20" style={{background:"#F1F5F9"}}>
             <div className={roboto.className}>
-            <div className="text-center text-4xl md:text-6xl font-extrabold">
-            <h1>All the tools that you need</h1>
+            <div className="text-center text-3xl lg:text-6xl font-extrabold">
+            <h1>All the <span className="underline">tools</span> that you need</h1>
         </div>
         
         <div className="flex justify-center">
-        <Image
-        src="/assets/Vector 14.png"
-        width={121}
-        height={10}
-        alt=""
-        />
+       
         </div>
         <div className="text-base md:text-2xl text-center mt-5">
         <p>Sit elit feugiat turpis sed integer integer accumsan turpis. Sed suspendisse nec lorem mauris.

@@ -19,14 +19,14 @@ export default function Section6(){
     }}
   ></div>
              <div className="text-center">
-                <div className="text-5xl font-extrabold">
+                <div className="text-3xl lg:text-5xl font-extrabold">
                     Join a world of learning
                 </div>
-                <div className="text-xl text-center my-8">
+                <div className="text-xl text-center px-4 my-8">
                 Malesuada ut aliquam at ac est nisi, interdum etiam dignissim.
 Risus elit et fringilla habitant ut facilisi.
                 </div>
-                <button className="text-center text-white font-bold py-3 rounded-xl px-12 bg-orange-600">Sign Up Now</button>
+                <button className="text-center text-white font-bold py-3 rounded-xl px-12 text-2xl bg-orange-600">Sign Up Now</button>
              </div>
              <div
    className="bg-cover h-96 lg:bg-cover lg:h-full"

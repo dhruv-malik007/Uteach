@@ -14,8 +14,8 @@ export default function Section3(){
             <div className="box1 lg:w-2/5" >
             
                    
-        <div className="font-bold text-3xl lg:font-extrabold lg:text-6xl">
-        An all-in-one app that makes it easier
+        <div className="font-extrabold text-3xl lg:font-black lg:text-6xl">
+        An <span className="underline">all-in-one</span> app that makes it easier
         </div>
         <div className="lg:text-xl ">
         <ul className="my-4 lg:my-16 ml-8 list-image-[url(/tick.svg)]">
@@ -23,22 +23,21 @@ export default function Section3(){
         <li>5 cups chopped Porcini mushrooms</li>
         <li>5 cups chopped Porcini mushrooms</li>
         </ul>
-        <a href="#" className="text-sky-700 ml-8 flex gap-2">Find more about the app 
+        <a href="#" className="text-blue-500 ml-8 flex gap-2">Find more about the app 
             <Image className="" src="/assets/arrow-right.svg" alt="" width={20} height={30}/>
         </a>
         </div>
             </div>
-       <div className=" lg:w-5/12">
-    
-       <div className=" ">
+       <div className=" lg:w-6/12">
+       <div className="">
             <Image
             src="/assets/Desktop2.svg"
             alt=""
             width={656}
             height={546.97}
             />
-            <div className="grid grid-cols-3 gap-4 lg:gap-8 bg-white" >
-                <div className=" p-1 shadow-xl">
+            <div className="grid grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-4 lg:gap-8 bg-white" >
+                <div className=" lg:p-3 lg:shadow-xl lg:rounded-xl">
                    <div className="text-purple-500 shadow-2xl shadow-black w-fit px-4 bg-violet-200 rounded">
                     Feature
                    </div>
@@ -54,7 +53,7 @@ export default function Section3(){
                     </button>
                     </div>
                 </div>
-                <div className="p-1 shadow-xl">
+                <div className="lg:p-3 lg:shadow-xl lg:rounded-xl">
                    <div className="text-blue-500 w-fit px-4 bg-sky-200 rounded">
                     Popular
                    </div>
@@ -70,7 +69,7 @@ export default function Section3(){
                     </button>
                     </div>
                 </div>
-                <div className="p-1 shadow-xl">
+                <div className="hidden lg:block lg:p-3 lg:shadow-xl lg:rounded-xl">
                    <div className="text-green-500 w-fit px-4 bg-green-200 rounded">
                     New
                    </div>

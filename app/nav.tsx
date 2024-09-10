@@ -18,29 +18,31 @@ const Navbar = () => {
 
     <div className={roboto.className}>
     <nav className="bg-white border-b shadow-sm">
-      <div className="max-w-7xl mx-auto px-2 sm:px-6 lg:px-4">
+      <div className="max-w-7xl  ml-2 lg:ml-16 px-0 sm:px-6 lg:px-4">
         <div className="flex justify-between items-center h-16">
+          <div className="flex items-center h-16">
           <div className="flex-shrink-0">
             
-              <a href="#">
-              <Image 
-        src="/assets/Logo-colored.svg"
-        height={60}
-        width={103}
-        alt=""
-        ></Image>
-              </a>
-          
-          </div>
-          <div className="hidden lg:flex space-x-6">         
-              <a href="#" className="font-bold text-2xl hover:text-black">Products</a>         
-              <a href="#" className="font-bold text-2xl hover:text-black">Solutions</a>         
-              <a href="#" className="font-bold text-2xl hover:text-black">Pricing</a>    
-              <a href="#" className="font-bold text-2xl hover:text-black">Resources</a>           
+            <a href="#">
+            <Image 
+      src="/assets/Logo-colored.svg"
+      height={60}
+      width={103}
+      alt=""
+      ></Image>
+            </a>
+        
+        </div>
+        <div className="hidden lg:px-20 lg:flex space-x-8">     
+            <a href="#" className="font-medium text-xl hover:text-black">Products</a>         
+            <a href="#" className="font-medium text-xl hover:text-black">Solutions</a>         
+            <a href="#" className="font-medium text-xl hover:text-black">Pricing</a>    
+            <a href="#" className="font-medium text-xl hover:text-black">Resources</a>           
+        </div>
           </div>
           <div className="hidden lg:flex items-center space-x-2">           
               <a  href="#" className="text-2xl hover:text-black">Log In</a>
-              <a href="#" className="px-4 py-2 text-2xl border rounded-xl text-black border-black hover:bg-black hover:text-white">
+              <a href="#" className="px-4 py-2 text-2xl border rounded-xl text-black border-black border-4 hover:bg-black hover:text-white">
                 Sign Up Now
               </a>           
           </div>
