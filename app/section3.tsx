@@ -75,7 +75,7 @@ export default function Section3(){
               className="relative z-30 mx-auto lg:mx-0"
             />
           </div>
-          <div className="absolute top-40 md:top-96 bottom-0 right-5 lg:top-72 flex flex-row gap-x-2 lg:flex-row lg:space-x-4 transform -translate-y-1/2 lg:translate-y-0 z-40 w-5/6 lg:w-auto">
+          <div className="absolute top-48 md:top-96 bottom-0 right-5 lg:top-72 flex flex-row gap-x-2 lg:flex-row lg:space-x-4 transform -translate-y-1/2 lg:translate-y-0 z-40 w-5/6 lg:w-auto">
             <div className="w-full lg:w-1/3">
               <Card
                 tag="Featured"

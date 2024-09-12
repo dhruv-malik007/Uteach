@@ -132,14 +132,6 @@ const comment = [
             />
           </div>
           <div className="relative  z-20 mb-4 w-2/3 lg:w-1/3 -ml-12 lg:ml-12 lg:pt-24 lg:mb-8">
-            {/* <Image
-              src="/assets/BgImg.png"
-              alt="Background Blob"
-              width={1100}
-              height={400}
-              className="z-10 sm: lg:hidden lg:h-auto  absolute max-w-[195%] sm:max-w-[140%] sm:mb-60 "
-            /> */}
-
             <div className="p-4 -ml-10 mt-5 mr-7 lg:-mt-3 lg:-mr-5 ">
               <Card
                 tag="Popular"
@@ -153,7 +145,7 @@ const comment = [
         </div>
       </div>
     </section>
-    <div className=" lg:hidden p-4 ml-2 max-w-sm">
+    <div className=" lg:hidden pl-4 ml-2 max-w-sm">
       <div className='mb-28'>
         <h2 className="text-2xl font-bold text-left">
           All the cool{" "}
@@ -170,8 +162,8 @@ const comment = [
         </Link>
       </div>
 
-      <div className="mt-8 mx-auto">        
-        <div className='p-4 pr-10 -ml-6 px-10 w-5/6'>
+      <div className=" mx-0 mx-0 px-0" style={{overflow:'clip',overflowClipMargin:'38px'}}>        
+        <div className='p-4 pr-10 -ml-6 px-10 w-5/6' >
           <Card
             tag="Popular"
             tagColor="bg-blue-200 text-blue-700"
@@ -180,7 +172,7 @@ const comment = [
             link="#"
           />
         </div>
-        <div className="-mt-[315px] -mr-52 overflow-y-hidden flex justify-center ">
+        <div className="-mt-[290px] ml-6 -mr-52 " >
           <Image
             src="/assets/BgImg.png"
             width={900}

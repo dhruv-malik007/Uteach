@@ -16,7 +16,7 @@ export default function Footer(){
            <div><Image className="m-3" src="./assets/Links.svg" alt="" width={173} height={35}/></div>
      
              <ul className=" mb-4 text-white text-xl space-y-6">
-             <a href="#"><li className="font-bold mt-20 lg:mt-0">Products</li></a>
+             <a href="#"><li className="font-bold mt-16 lg:mt-0">Products</li></a>
              <a href="#"><li className="my-6">Pricing</li></a>
              <a href="#"><li className="my-6">Overview</li></a>
              <a href="#"><li className="my-6">Browse</li></a>
