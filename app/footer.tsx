@@ -14,43 +14,43 @@ export default function Footer(){
             <div className="px-3 lg:px-20 py-8" style={{background: "rgba(15, 23, 42, 1)"}}>
             <div className=" lg:grid grid-cols-6 my-10">
            <div><Image className="m-3" src="./assets/Links.svg" alt="" width={173} height={35}/></div>
-     <div className="pl-3">
-     <ul className=" mb-4 text-white text-xl space-y-6">
+
+     <ul className=" mb-4 ml-3 text-white text-xl space-y-6">
              <a href="#"><li className="font-bold mt-16 lg:mt-0">Products</li></a>
              <a href="#"><li className="my-6">Pricing</li></a>
              <a href="#"><li className="my-6">Overview</li></a>
              <a href="#"><li className="my-6">Browse</li></a>
              <a href="#"><li className="my-6">Accesbility<span className="bg-[#F3E8FF] text-black  px-1 py-1 text-xs ml-2">BETA</span></li></a>
              </ul>
-             <ul className="mb-4 text-white text-xl space-y-6">
+             <ul className="mb-4 ml-3 text-white text-xl space-y-6">
              <a href="#"><li className="font-bold mt-20 lg:mt-0">Solutions</li></a>
              <a href="#"><li className="my-6" >Brainstorming</li></a>
              <a href="#"><li className="my-6">Ideation</li></a>
              <a href="#"><li className="my-6">Wireframing</li></a>
              <a href="#"><li className="my-6">Research</li></a>
              </ul>
-             <ul className="mb-4 text-white text-xl space-y-6">
+             <ul className="mb-4 ml-3 text-white text-xl space-y-6">
              <a href="#"><li className="font-bold mt-20 lg:mt-0">Resources</li></a>
              <a href="#"><li className="my-6">Help Center</li></a>
              <a href="#"><li className="my-6">Blog</li></a>
              <a href="#"><li className="my-6">Tutorials</li></a>
              <a href="#"><li className="my-6">FAQs</li></a>
              </ul>
-             <ul className="mb-4 text-white text-xl space-y-6">
+             <ul className="mb-4 ml-3 text-white text-xl space-y-6">
              <a href="#"><li className="font-bold mt-20 lg:mt-0">Support</li></a>
              <a href="#"><li className="my-6">Contact Us</li></a>
              <a href="#"><li className="my-6">Developers</li></a>
              <a href="#"><li className="my-6">Documentation</li></a>
              <a href="#"><li className="my-6">Integration</li></a>
              </ul>
-             <ul className="mb-4  text-white text-xl space-y-6">
+             <ul className="mb-4 ml-3 text-white text-xl space-y-6">
              <a href="#"><li className="font-bold mt-20 lg:mt-0">Company</li></a>
              <a href="#"><li className="my-6">About</li></a>
              <a href="#"><li className="my-6">Press</li></a>
              <a href="#"><li className="my-6">Events</li></a>
              <a href="#"><li className="my-6">Request Demo <span>&rarr;</span></li></a>
              </ul>
-     </div>
+
              
             </div>
         <hr/>
