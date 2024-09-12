@@ -8,7 +8,7 @@ import Section4 from "./section4";
 import Section5 from "./Section5";
 import Section6 from "./Section6";
 import Footer from "./footer";
-import Nav from "./nav";
+import Navbar from "./nav";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -26,7 +26,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body >
-        <Nav/>
+        <Navbar/>
         <Section1/>
         <Section2/>
         <Section3/>

@@ -1,8 +1,10 @@
 import Image from "next/image";
 import { Roboto } from 'next/font/google'
+import Link from "next/link";
+import Card from './Card';
 
 const roboto = Roboto({
-    weight: '400',
+    weight: ["100", "300", "400", "500", "700", "900"],
     subsets: ['latin'],
   })
 
@@ -10,90 +12,101 @@ const roboto = Roboto({
 export default function Section3(){
     return(
         <div className={roboto.className}>   
-        <div className="p-4 lg:flex lg:p-20 items-center justify-center gap-20">
-            <div className="box1 lg:w-2/5" >
-            
-                   
-        <div className="font-extrabold text-3xl lg:font-black lg:text-6xl">
-        An <span className="underline">all-in-one</span> app that makes it easier
-        </div>
-        <div className="lg:text-xl ">
-        <ul className="my-4 lg:my-16 ml-8 list-image-[url(/tick.svg)]">
-        <li>5 cups chopped Porcini mushrooms</li>
-        <li>5 cups chopped Porcini mushrooms</li>
-        <li>5 cups chopped Porcini mushrooms</li>
-        </ul>
-        <a href="#" className="text-blue-500 ml-8 flex gap-2">Find more about the app 
-            <Image className="" src="/assets/arrow-right.svg" alt="" width={20} height={30}/>
-        </a>
-        </div>
-            </div>
-       <div className=" lg:w-6/12">
-       <div className="">
+        <section className="relative bg-white pt-14 md:mb-72 pb-56 lg:pb-10 px-6 lg:px-20 lg:pt-24">
+      <div className="container mx-auto flex flex-col lg:flex-row items-center">
+        <div className="lg:w-1/2 mb-12 lg:mb-0 z-20">
+          <h2 className="text-2xl lg:text-6xl font-bold lg:font-extrabold text-gray-900 mb-4">
+            An{" "}
+            <span className="relative inline-block underline decoration-orange-500">
+              all-in-one
+            </span>{" "}
+            app that makes it easier
+          </h2>
+          <p className="text-gray-700  lg:hidden pb-5">
+            Est et in pharetra magna adipiscing ornare aliquam. Tellus arcu sed consequat ac velit ut eu blandit. Ullamcorper ornare in et egestas dolor orci.
+          </p>
+          <ul className=" list-image-[url(/tick.svg)] text-gray-700 mb-10 pl-6 lg:pt-5 lg:pl-6">
+            <li className="text-xl font-normal leading-[36px] ">
+              Est et in pharetra magna adipiscing ornare aliquam.
+            </li>
+            <li className="text-xl font-normal leading-[36px] ">
+              Tellus arcu sed consequat ac velit ut eu blandit.
+            </li>
+            <li className="text-xl font-normal leading-[36px] ">
+              Ullamcorper ornare in et egestas dolor orci.
+            </li>
+          </ul>
+          <Link
+            href="/about"
+            className="text-blue-600 font-semibold text-lg lg:text-xl inline-flex items-center"
+          >
+            Find more about the app
             <Image
-            src="/assets/Desktop2.svg"
-            alt=""
-            width={656}
-            height={546.97}
+              src="/assets/arrow-right.svg"
+              alt="Arrow Right"
+              width={20}
+              height={20}
+              className="ml-2"
             />
-            <div className="grid grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-4 lg:gap-8 bg-white" >
-                <div className=" lg:p-3 lg:shadow-xl lg:rounded-xl">
-                   <div className="text-purple-500 shadow-2xl shadow-black w-fit px-4 bg-violet-200 rounded">
-                    Feature
-                   </div>
-                    <div className="font-bold my-4 ">
-                        The map of<br/> mathematics
-                    </div>
-                    <div className="text-sm">
-                    Egestas elit dui scelerisque ut eu purus aliquam vitae habitasse.
-                    </div>
-                    <div className=" flex mx-2 justify-center ring-offset-2 ring lg:px-6 py-2 mt-8 rounded-sm">
-                    <button >
-                        <p className="text-xs lg:text-base">Take Lesson</p>
-                    </button>
-                    </div>
-                </div>
-                <div className="lg:p-3 lg:shadow-xl lg:rounded-xl">
-                   <div className="text-blue-500 w-fit px-4 bg-sky-200 rounded">
-                    Popular
-                   </div>
-                    <div className="font-bold my-4 ">
-                        Design for how people think
-                    </div>
-                    <div className="text-sm">
-                    Aliquam ut euismod condimentum ultricies volutpat sit non.                     
-                    </div>
-                    <div className="flex mx-2 justify-center ring-offset-2 ring lg:px-6 py-2 mt-8 rounded-sm">
-                    <button >
-                    <p className="text-xs lg:text-base">Take Lesson</p>
-                    </button>
-                    </div>
-                </div>
-                <div className="hidden lg:block lg:p-3 lg:shadow-xl lg:rounded-xl">
-                   <div className="text-green-500 w-fit px-4 bg-green-200 rounded">
-                    New
-                   </div>
-                    <div className="font-bold my-4 ">
-                        International & commercial law
-                    </div>
-                    <div className="text-sm">
-                    Molestie integer eu arcu, mauris bibendum rhoncus imperdiet dui. 
-                     </div>
-                    <div className="flex mx-2 justify-center ring-offset-2 ring lg:px-6 py-2 mt-8 rounded-sm">
-                    <button >
-                    <p className="text-xs lg:text-base">Take Lesson</p>
-                    </button>
-                    </div>
-                </div>
-
+          </Link>
+        </div>
+        <div className="lg:w-1/2 relative flex justify-center">
+          <div className="relative w-full flex justify-center">
+        
+            <Image
+              src="/assets/Icons.svg"
+              alt="Background Blob"
+              width={140}
+              height={500}
+              className="hidden lg:block absolute lg:-top-30 lg:right-96 lg:mr-56 z-20"
+            />
+            <Image
+              src="/assets/Blob.svg"
+              alt="Background Blob"
+              width={260}
+              height={200}
+              className="absolute top-16 w-5/6 mr-44 -mt-10 lg:w-[350px]  lg:mr-96 z-20"
+            />
+            <Image
+              src="/assets/video.svg"
+              alt="Desktop Image"
+              width={1100}
+              height={600}
+              className="relative z-30 mx-auto lg:mx-0"
+            />
+          </div>
+          <div className="absolute top-40 md:top-96 bottom-0 right-5 lg:top-72 flex flex-row gap-x-2 lg:flex-row lg:space-x-4 transform -translate-y-1/2 lg:translate-y-0 z-40 w-5/6 lg:w-auto">
+            <div className="w-full lg:w-1/3">
+              <Card
+                tag="Featured"
+                tagColor="bg-purple-200 text-purple-700"
+                title="The map of mathematics"
+                description="Egestas elit dui scelerisque ut eu purus aliquam vitae habitasse."
+                link="#"
+              />
             </div>
-           
+            <div className="w-full lg:w-1/3">
+              <Card
+                tag="Popular"
+                tagColor="bg-blue-200 text-blue-700"
+                title="Design for how people think"
+                description="Aliquam ut euismod condimentum elementumg ultricies volutpat sit non."
+                link="#"
+              />
+            </div>
+            <div className=" hidden lg:block w-full lg:w-1/3">
+              <Card
+                tag="New"
+                tagColor="bg-green-200 text-green-700"
+                title="International & commercial law"
+                description="Molestie integer eu arcu, grfsgdfg gdfgfgfg mauris bibendum dui."
+                link="#"
+              />
+            </div>
+          </div>
         </div>
-
-
-
-       </div>
-        </div>
+      </div>
+    </section>
         </div>
     );
 }

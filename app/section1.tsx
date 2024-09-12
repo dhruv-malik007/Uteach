@@ -2,7 +2,7 @@ import Image from "next/image";
 import { Roboto } from 'next/font/google'
 
 const roboto = Roboto({
-    weight: '400',
+    weight: ["100", "300", "400", "500", "700", "900"],
     subsets: ['latin'],
   })
 
@@ -13,36 +13,35 @@ export default function Section1(){
        <div className="box1 gap-20">
         <div className="gap-8 mb-12">
         
-        <h1 className="font-black text-4xl lg:text-7xl gap-2"><span className="underline">Teach</span> Students Worldwide</h1>
+        <h1 className="font-extrabold text-4xl lg:text-7xl gap-2" style={{fontWeight:'900'}}><span className="underline">Teach</span> Students Worldwide</h1>
         {/* <Image className="relative"
         src="/assets/Vector 14.png"
         width={190.5}
         height={12.4}
         alt=""
         /> */}
-        <div className="font-normal text-xl lg:text-2xl mt-12 mb-12">Amet nunc diam orci duis ut sit diam arcu, nec. Eleifend proin massa tincidunt viverra lectus pulvinar. Nunc ipsum est pellentesque turpis ultricies</div>
+        <div className="font-light text-xl lg:text-2xl mt-12 mb-12">Amet nunc diam orci duis ut sit diam arcu, nec. Eleifend proin massa tincidunt viverra lectus pulvinar. Nunc ipsum est pellentesque turpis ultricies</div>
         
         <div className="bttn flex space-around h-18">
-            <button className="border-2 border-white text-white text-xl text-semibold rounded-xl px-14 py-5" style={{background: "#EA580C"}}>Sign Up Now</button>
-            <button className="flex ml-6 font-semibold text-xl text-blue-600 mt-4">
+            <button className="w-40 bg-orange-600 text-white px-0 py-3 lg:px-6 lg:py-5  text-center font-bold rounded-md mr-4 lg:w-60 lg:text-xl  " style={{background: "#EA580C"}}>Sign Up Now</button>
+            <button className="text-blue-600 lg:text-lg font-semibold text-sm flex items-center">
             <Image className="mr-2"
             src="/assets/play-circle.svg"
             alt=""
-            height={30}
-            width={30}
+            height={20}
+            width={20}
             />
                 View Demo</button>
             
         </div>
         </div>
-    <div className=" lg:grid grid-cols-2 space-around items-center gap-x-0">
+    <div className=" mt-12 flex flex-col lg:flex-row  lg:items-center   gap-2">
     <div className="">
-        <div className="text-base ">
-            <p>Trusted by</p>
-        leading companies
-        </div>
+    <p className="text-[#475569] text-[16px] mr-10 text-left">
+              Trusted by <span className='hidden lg:inline'><br /></span>leading companies
+            </p>
     </div> 
-   <div className="mt-4 lg:mt-0 grid grid-cols-5 item-center ">
+   <div className="flex flex-row justify-start items-start gap-5 lg:gap-10 ">
    <Image
         src="/assets/Black and White Collection 3.svg"
         alt=""

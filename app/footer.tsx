@@ -1,8 +1,9 @@
 import Image from "next/image";
 import { Roboto } from 'next/font/google'
+import Link from "next/link";
 
 const roboto = Roboto({
-    weight: '400',
+    weight: ["100", "300", "400", "500", "700", "900"],
     subsets: ['latin'],
   })
 
@@ -19,7 +20,7 @@ export default function Footer(){
              <a href="#"><li className="my-6">Pricing</li></a>
              <a href="#"><li className="my-6">Overview</li></a>
              <a href="#"><li className="my-6">Browse</li></a>
-             <a href="#"><li className="my-6">Accesbility</li></a>
+             <a href="#"><li className="my-6">Accesbility<span className="bg-[#F3E8FF] text-black  px-1 py-1 text-xs ml-2">BETA</span></li></a>
              </ul>
              <ul className="mb-4 text-white text-xl space-y-6">
              <a href="#"><li className="font-bold mt-20 lg:mt-0">Solutions</li></a>
@@ -47,7 +48,7 @@ export default function Footer(){
              <a href="#"><li className="my-6">About</li></a>
              <a href="#"><li className="my-6">Press</li></a>
              <a href="#"><li className="my-6">Events</li></a>
-             <a href="#"><li className="my-6">Request Demo</li></a>
+             <a href="#"><li className="my-6">Request Demo <span>&rarr;</span></li></a>
              </ul>
             </div>
         <hr/>
@@ -56,10 +57,12 @@ export default function Footer(){
             <div className="text-lg mt-8 lg:mt-0 md:text-base flex mt-2 gap-0 md:flex justify-around">
                     <li className="list-none mx-2 md:list-none mx-2 md:mx-6 "> <a href="" >Terms   </a> </li>
                     <li className="list-none mx-2 md:list-none mx-2 md:mx-6"> <a href="" >Privacy </a> </li>
-                    <li className="list-none mx-2 md:list-none mx-2 md:mx-6"> <a href="" >Contact </a> </li>
+                    <li className="list-none mx-2 md:list-none mx-2 md:mx-6 hidden lg:block"> <a href="" >Contact </a> </li>
                     <li className="list-none mx-2 md:list-none mx-2 md:mx-6"> <a href="" > &#127760; EN      </a> </li>
-                    <li className="list-none mx-2 md:list-none mx-2 md:mx-6"> <a href="" > 	&#8364; EUR    </a> </li>
-            
+                    <li className="list-none mx-2 md:list-none mx-2 md:mx-6"> <a href="" ><span className="hidden lg:inline">&#8364;</span>EUR</a></li>
+                    <li className="list-none mx-2 md:list-none mx-2 md:mx-6"><Link href="#" className="hover:text-white flex items-center text-[#E2E8F0]">
+              <Image src="/assets/accessibility.svg" alt="Info" width={24} height={48} className="mr-2" />
+            </Link> </li>
             </div>
         </div>
 
