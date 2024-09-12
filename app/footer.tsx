@@ -11,11 +11,11 @@ const roboto = Roboto({
 export default function Footer(){
     return(
         <div className={roboto.className}>
-            <div className="px-1 md:px-20 py-8" style={{background: "rgba(15, 23, 42, 1)"}}>
-            <div className=" md:grid grid-cols-6 my-10">
+            <div className="px-3 lg:px-20 py-8" style={{background: "rgba(15, 23, 42, 1)"}}>
+            <div className=" lg:grid grid-cols-6 my-10">
            <div><Image className="m-3" src="./assets/Links.svg" alt="" width={173} height={35}/></div>
-     
-             <ul className=" mb-4 text-white text-xl space-y-6">
+     <div className="pl-3">
+     <ul className=" mb-4 text-white text-xl space-y-6">
              <a href="#"><li className="font-bold mt-16 lg:mt-0">Products</li></a>
              <a href="#"><li className="my-6">Pricing</li></a>
              <a href="#"><li className="my-6">Overview</li></a>
@@ -50,6 +50,8 @@ export default function Footer(){
              <a href="#"><li className="my-6">Events</li></a>
              <a href="#"><li className="my-6">Request Demo <span>&rarr;</span></li></a>
              </ul>
+     </div>
+             
             </div>
         <hr/>
         <div className="md:flex justify-between text-white my-6">
